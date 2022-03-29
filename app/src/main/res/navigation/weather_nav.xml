@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weather_nav"
+    app:startDestination="@id/ForecastFragment">
+
+    <fragment
+        android:id="@+id/ForecastFragment"
+        android:label="Forecast"
+        android:name="com.emissa.apps.myweatherapp.views.ForecastFragment"
+        tools:layout="@layout/fragment_forecast">
+        <action
+            android:id="@+id/action_ForecastFragment_to_ForecastDetailsFragment"
+            app:destination="@id/ForecastDetailsFragment" />
+<!--        <action-->
+<!--            android:id="@+id/action_ForecastFragment_to_SearchLocationFragment"-->
+<!--            app:destination="@id/SearchLocationFragment" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/ForecastDetailsFragment"
+        android:label="Forecast Details"
+        android:name="com.emissa.apps.myweatherapp.views.ForecastDetailsFragment"
+        tools:layout="@layout/fragment_forecast_details"/>
+
+<!--    <dialog-->
+<!--        android:id="@+id/SearchLocationFragment"-->
+<!--        android:label="@string/search"-->
+<!--        android:name="com.emissa.apps.myweatherapp.views.SearchDialog"-->
+<!--        tools:layout="@layout/fragment_dialog_search" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_SearchLocationFragment_to_ForecastFragment"-->
+<!--            app:destination="@id/ForecastFragment" />-->
+<!--    </dialog>-->
+</navigation>

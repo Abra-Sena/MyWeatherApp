@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyWeatherApp</string>
+
+    <string name="date_and_time">Date</string>
+    <string name="temperature">Temp:</string>
+    <string name="felt_temp">Feels like</string>
+    <string name="search_city">Search Other City\'s Forecast</string>
+    <string name="search_hint">Enter a location</string>
+    <string name="search_input_digits">1234567890abcdefghijklmnopqrstuvwxyz_-</string>
+    <string name="settings">Settings</string>
+    <string name="enter_city">Enter City</string>
+    <string name="search">Search</string>
+</resources>
